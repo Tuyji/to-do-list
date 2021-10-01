@@ -1,5 +1,6 @@
 package com.hepsiemlak.assignment.service;
 
+import com.hepsiemlak.assignment.entity.ToDo;
 import com.hepsiemlak.assignment.model.ToDoAddRequestModel;
 import com.hepsiemlak.assignment.model.ToDoResponseModel;
 import com.hepsiemlak.assignment.model.ToDoUpdateRequestModel;
@@ -12,9 +13,9 @@ public interface ToDoListService {
 
     ToDoResponseModel getToDoById(String id);
 
-    void addToDo(ToDoAddRequestModel requestModel);
+    ToDo addToDo(ToDoAddRequestModel requestModel);
 
-    void updateToDo(ToDoUpdateRequestModel requestModel);
+    ToDo updateToDo(ToDoUpdateRequestModel requestModel);
 
     void deleteToDo(String id);
 }

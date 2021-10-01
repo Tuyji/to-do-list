@@ -45,22 +45,23 @@ public class ToDoListServiceImpl implements ToDoListService {
     }
 
     @Override
-    public void addToDo(ToDoAddRequestModel requestModel) {
+    public ToDo addToDo(ToDoAddRequestModel requestModel) {
         ToDo toDo = ToDo.builder().build();
         BeanUtils.copyProperties(requestModel, toDo);
-        repository.save(toDo);
+        return repository.save(toDo);
     }
 
     @Override
-    public void updateToDo(ToDoUpdateRequestModel requestModel) {
+    public ToDo updateToDo(ToDoUpdateRequestModel requestModel) {
         String id = requestModel.getId();
         ToDo toDo = repository.findById(id).orElseThrow(() -> new ToDoNotFoundException(id));
         BeanUtils.copyProperties(requestModel, toDo);
-        repository.save(toDo);
+        return repository.save(toDo);
     }
 
     @Override
     public void deleteToDo(String id) {
+        ToDo toDo = repository.findById(id).orElseThrow(() -> new ToDoNotFoundException(id));
         repository.deleteById(id);
     }
 }
