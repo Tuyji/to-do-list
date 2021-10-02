@@ -36,7 +36,7 @@ Simple to-do-list rest application with spring boot.
 
 |  URL | Remark |
 |----------|--------------|
-|`http://localhost:8080/api/todolist`                     | To-Do-List API |
+|`http://localhost:8080/api/todolist`                 | To-Do-List API |
 |`http://localhost:8080/swagger-ui.html`              | Swagger Impl |
 
 
@@ -71,10 +71,10 @@ Simple to-do-list rest application with spring boot.
 
 
 
-## Unit Tests & Test Coverage
+#### Unit Tests & Test Coverage
 
 
-[![INSERT YOUR GRAPHIC HERE](https://github.com/Tuyji/to-do-list/blob/main/src/main/resources/images/coverageCapture.PNG ]()
+[![INSERT YOUR GRAPHIC HERE](https://github.com/Tuyji/to-do-list/blob/main/src/main/resources/images/coverageCapture.PNG)]()
 
 
 
