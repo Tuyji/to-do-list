@@ -14,7 +14,12 @@ import java.util.Date;
 @AllArgsConstructor
 public class ToDoAddRequestModel {
 
+    private String title;
+
     private String description;
 
     private Date targetDate;
-}
+
+    private String category;
+
+    private boolean completed;}

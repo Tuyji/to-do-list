@@ -44,7 +44,10 @@ public class ToDoListServiceTest {
     public void getAllTodosServiceTest() {
         ToDo todo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
@@ -63,6 +66,10 @@ public class ToDoListServiceTest {
     public void getToDoByIdServiceTest() {
         ToDo todo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
+                .description("test")
+                .completed(true)
                 .description("test")
                 .targetDate(new Date())
                 .build();
@@ -80,7 +87,10 @@ public class ToDoListServiceTest {
     public void addToDoServiceTest() {
         ToDo todo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
@@ -102,12 +112,19 @@ public class ToDoListServiceTest {
 
         ToDo todo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
         ToDo newToDo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
+                .completed(true)
+                .targetDate(new Date())
                 .description("test-update")
                 .build();
 
@@ -125,7 +142,10 @@ public class ToDoListServiceTest {
     public void deleteToDoServiceTest() {
         ToDo todo = ToDo.builder()
                 .id("47f5da72-54d3-42ae-ab05-18cab12b7409")
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 

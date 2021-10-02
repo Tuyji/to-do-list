@@ -18,4 +18,9 @@ public class ToDoUpdateRequestModel {
     private String description;
 
     private Date targetDate;
-}
+
+    private String title;
+
+    private String category;
+
+    private boolean completed;}

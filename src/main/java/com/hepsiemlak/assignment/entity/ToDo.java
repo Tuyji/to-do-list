@@ -20,7 +20,14 @@ public class ToDo {
     @GeneratedValue(strategy = GenerationStrategy.UNIQUE)
     private String id;
 
+    private String title;
+
     private String description;
 
     private Date targetDate;
+
+    private String category;
+
+    private boolean completed;
+
 }

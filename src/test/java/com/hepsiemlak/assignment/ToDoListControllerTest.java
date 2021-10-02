@@ -41,7 +41,10 @@ public class ToDoListControllerTest {
     public void getAllTodosTest() throws Exception {
 
         ToDoResponseModel toDoResponseModel = ToDoResponseModel.builder()
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
@@ -56,7 +59,10 @@ public class ToDoListControllerTest {
     public void getTodoByIdTest() throws Exception {
         ToDoResponseModel toDoResponseModel = ToDoResponseModel.builder()
                 .id(UUID.randomUUID().toString())
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
@@ -73,7 +79,10 @@ public class ToDoListControllerTest {
     public void addTodoByIdTest() throws Exception {
 
         ToDoAddRequestModel toDoRequestModel = ToDoAddRequestModel.builder()
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
@@ -90,10 +99,12 @@ public class ToDoListControllerTest {
     public void updateTodoByIdTest() throws Exception {
 
         ToDoAddRequestModel toDoRequestModel = ToDoAddRequestModel.builder()
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
-
 
         mvc.perform(put("/api/todolist")
                 .content(asJsonString(toDoRequestModel))
@@ -109,7 +120,10 @@ public class ToDoListControllerTest {
 
         ToDoResponseModel toDoResponseModel = ToDoResponseModel.builder()
                 .id(UUID.randomUUID().toString())
+                .category("event")
+                .title("ToDoTask")
                 .description("test")
+                .completed(true)
                 .targetDate(new Date())
                 .build();
 
