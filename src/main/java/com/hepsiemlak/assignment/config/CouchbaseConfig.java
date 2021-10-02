@@ -11,7 +11,7 @@ public class CouchbaseConfig extends AbstractCouchbaseConfiguration {
     private String connectionString;
     @Value("${couchbase.username}")
     private String username;
-    @Value("${couchbase.admin}")
+    @Value("${couchbase.password}")
     private String password;
     @Value("${couchbase.bucketname}")
     private String bucketName;
